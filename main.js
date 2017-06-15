@@ -14,15 +14,10 @@ if (!process.argv[3]){
     console.log('    node main [first comic desired] [last comic desired]'.red);
 }
 
-
-
-
-
 //FUNCTION FACTORY!
 vo(run)(function (err, result) {
     if (err) throw err
 })
-
 
 function* run() {
     console.log(colors.inverse('Preparing to download comics ' + bottom + ' through ' + top + '.'));
